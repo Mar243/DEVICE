@@ -1,0 +1,398 @@
+/*header*/
+  
+.header
+  margin-top: 13px
+  background: linear-gradient(#fff 20px, #ffe17f 20px 100%) 
+  padding: 0 60px 
+.logo-image-link
+  display: block  
+  width: 145px
+  height: 36px  
+  margin-bottom: 30px
+.logo-image
+  width: 100%
+  object-fit: contain 
+.logo-image-link:hover
+  opacity: .6
+.logo-image-link:focus
+  outline: 2px solid #af4fff
+.logo-image-link:active
+  opacity: .3
+      
+/*user-menu*/   
+
+.user
+  display: flex  
+  margin-bottom: 20px 
+.serch-form  
+  margin-right: 26px
+  display: flex
+  align-items: flex-start
+.serch-focus
+  position: relative
+  top: -3px
+  width: 360px
+  padding: 1px 0
+  border: 2px solid transparent 
+.serch-focus:focus-within
+  outline: 2px solid #af4fff  
+.serch-input  
+  background-color: #ffe17f
+  width: 360px
+  padding: 7px 48px 
+  background-image: url("../images/svg/serch.svg")
+  background-repeat: no-repeat
+  background-position: left 10px center
+  background-size: 20px 
+  font: inherit
+  font-style: normal
+  line-height: 20px
+  border-radius: 50px 0 0 50px
+  border: 2px solid #000
+  cursor: pointer  
+.serch-input:focus
+  outline: none
+ 
+.serch-input::placeholder  
+  color: #000
+  font-family: "Rubik", sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 20px
+.serch-button
+  position: relative
+  background-color: #ffe17f
+  width: 160px
+  padding: 7px 0
+  font: inherit
+  line-height: 20px  
+  border-radius: 0px 50px 50px 0px
+  border: 2px solid #000
+  cursor: pointer
+.serch-button::before
+  content: ""
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-50%)
+  width: 162px
+  height: 40px
+.serch-button:hover
+  color: #fff
+  background-color: #000
+.serch-button:focus::before
+  outline: 2px solid #af4fff
+  outline-offset: 1px
+.serch-button:active
+  background-color: #ffe17f
+  color: #000
+.serch-button:disabled    
+  opacity: .3 
+.navigation-user 
+  margin: 0
+  padding: 0
+  display: flex
+  flex-wrap: wrap
+  width: 590px 
+.navigation-user-item  
+  list-style-type: none 
+  position: relative 
+.navigation-user-item:nth-child(2)
+  margin-left: auto  
+.navigation-user-item:last-child
+  margin-left: 18px  
+.navigation-user-item-compare
+  margin-left: 26px  
+  
+.navigation-user-link
+  display: block
+  position: relative
+  padding: 5px 0 5px 30px
+  text-decoration: none
+  font: inherit
+  font-size: 18px
+  color: #000
+  line-height: 30px   
+.navigation-icon
+  position: absolute
+  display: block
+  left: 10px
+  top: 12px
+  z-index: 0
+  width: 20px
+  height: 15px
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  background-size: contain
+.navigation-icon-login
+  background-image: url("../images/svg/login.svg")  
+.navigation-icon-compare 
+  background-image: url("../images/svg/compare.svg") 
+.navigation-icon-cart 
+  background-image: url("../images/svg/cart.svg") 
+  left: 7px
+  top: 10px   
+.cart-counter  
+  position: absolute
+  top: 8px
+  left: 0
+  width: 20px
+  height: 20px
+  background-color: #fff
+  border-radius: 50%
+  background-image: url("../images/svg/2.svg")
+  background-repeat: no-repeat
+  background-position: center
+  z-index: 1  
+.navigation-user-link:hover
+  opacity: .6
+.navigation-user-link:focus
+  outline: 2px solid #af4fff
+.navigation-user-link:active
+  opacity: .3 
+  
+/*popver*/ 
+
+.popover
+  position: absolute
+  padding: 20px 0
+  min-height: 186px
+  width: 320px
+  background-color: #000
+  color: #fff
+  top: 40px
+  left: -100px
+  z-index: 3
+  display: none
+.popover-open
+  display: block  
+.poover-content
+  height: 100%
+.popover-cart-list
+  list-style-type: none
+  margin: 0
+  padding: 0  
+.popover-cart-item
+  display: grid
+  grid-template-columns: 20px auto min-content min-content 20px 
+.popover-cart-item:first-child
+  margin-bottom: 40px  
+.popover-cart-item:nth-child(2)
+  margin-bottom: 20px
+.popover-cart-item:nth-child(3)
+  grid-column: 1 / -1
+  background-color: #1a1a1a
+  padding: 20px 20px   
+  margin-bottom: 20px
+.popover-cart-link 
+  grid-column: 2 / 4
+  display: grid
+  grid-template-columns: min-content min-content
+  align-items: center
+  gap: 23px
+  text-decoration: none
+  color: #fff
+.popover-cart-link:hover
+  opacity: .6  
+.popover-cart-link:focus
+  outline: 2px solid #af4fff
+.popover-cart-link:active
+  opacity: .3    
+.poopover-cart-image  
+  grid-column: 1 / 2 
+  width: 100%
+  object-fit: contain   
+.popver-cart-info
+  padding: 0
+  margin: 0
+  grid-column: 2 / 3 
+  align-self: start
+  color: #fff
+.button-cross
+  display: block
+  grid-column: 4 / 5
+  grid-row: 1 / 2
+  justify-self: end
+  align-self: start
+  width: 10px
+  height: 10px   
+  border: none
+  background-color: transparent  
+  background-image: url("../images/svg/cross.svg")
+  background-size: contain
+  background-repeat: no-repeat
+.button-cross:hover
+  opacity: .6
+.button-cross:focus
+  outline: 2px solid #af4fff
+.button-cross:active
+  opacity: .3     
+.popover-product-amount 
+  padding: 0
+  margin: 0
+  grid-column: 1 / 2
+  justify-self: start
+.popover-product-sum
+  padding: 0
+  margin: 0
+  grid-column: 4 / 6
+  justify-self: end
+.popover-open-button
+  margin: 0 20px
+  padding: 14px 21px
+  font-family: "Raleway", sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.6px 
+  text-transform: uppercase
+.popover-open-button:hover
+  background-color: #ffe17f
+.popover-open-button:focus
+  outline: 2px solid #af4fff
+.popover-open-button:active
+  color: #000
+  opacity: .6 
+.popover-open-button:disabled
+  background-color: #fff
+  opacity: .3  
+
+  /*catalog*/    
+.catalog
+  display: flex 
+  margin-bottom: 20px     
+.catalog-list
+  margin: 0
+  padding: 0
+  list-style-type: none    
+  margin-bottom: 20px
+  margin-right: 275px
+.catalog-list-right 
+  width: 472px
+  display: grid
+  grid-template-columns: repeat(3, 127px)
+  gap: 10px 45px 
+  list-style-type: none
+  margin: 0
+  padding: 0 
+.catalog-list .catalog-item:first-child
+  width: 293px     
+.catalog-list .catalog-item:not(:last-child)
+  margin-bottom: 10px 
+.catalog-item
+  position: relative
+.catalog-link-open
+  display: flex
+  justify-content: space-between  
+  align-items: center
+.catalog-link
+  display: block
+  padding: 20px 0
+  font-family: "Raleway", sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.6px
+  text-transform: uppercase 
+  color: #000
+  text-decoration: none  
+  cursor: pointer 
+.catalog-link:hover
+  opacity: .6  
+.catalog-link:focus
+  outline: 2px solid #af4fff
+  outline-offset: 1px  
+.catalog-link:active
+  opacity: .3   
+/* toggle-catalog*/
+
+.catalog-link-cross
+  display: block
+  position: relative
+  width: 50px
+  height: 50px
+  border: 2px solid #000
+  border-radius: 50%    
+  opacity: .6 
+.catalog-link-cross::before,
+.catalog-link-cross::after
+  content: ""
+  position: absolute
+  width: 16px
+  height: 2px
+  background-color: #000 
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  opacity: .6  
+.catalog-link-cross::before
+  transform: translate(-50%,-50%) rotate(90deg)
+.catalog-link-cross::after
+  transform: translate(-50%,-50%) rotate(180deg)
+.catalog-link:hover .catalog-link-cross
+  border-color: #000  
+  opacity: 1  
+   
+.catalog-item:hover .catalog-link-cross::before
+  transform: translate(-50%,-50%) rotate(180deg)
+.catalog-item:hover .catalog-link-cross::after   
+  opacity: 1
+  transform: translate(-50%,-50%) rotate(180deg)
+.catalog-item:active .catalog-link-cross::before
+  transform: translate(-50%,-50%) rotate(180deg)
+.catalog-item:active .catalog-link-cross::after
+  opacity: 1  
+.catalog-list-submenu
+  margin: 0
+  padding: 0
+  list-style-type: none
+  position: absolute  
+  z-index: 5
+  top: 40px
+  left: -5px
+  display: none
+  padding-top: 35px
+.catalog-link-submenu
+  display: block 
+  text-decoration: none
+  font: inherit  
+  font-style: normal  
+  line-height: 18px  
+  color: #000  
+.catalog-item:hover .catalog-list-submenu,
+.catalog-item:active .catalog-list-submenu
+  display: block
+  display: grid
+  grid-template-columns: 222px repeat(2, 211px)
+  row-gap: 3px
+.catalog-item-submenu:first-child,
+.catalog-item-submenu:nth-child(2),
+.catalog-item-submenu:nth-child(3)
+  grid-column: 1 / 2
+.catalog-item-submenu:nth-child(4)
+  grid-row: 1 / 2 
+  grid-column: 2 / 3 
+.catalog-item-submenu:nth-child(5) 
+  grid-row: 2 / 3
+  grid-column: 2 / 3 
+.catalog-item-submenu:nth-child(6)  
+  grid-row: 1 / 2 
+  grid-column: 3 / 4  
+  
+.catalog-link-submenu:hover
+  opacity: .6
+.catalog-link-submenu:focus
+  outline: 2px solid #af4fff  
+.catalog-link-submenu:active
+  opacity: .3
+
+
+
+
+  
+
+

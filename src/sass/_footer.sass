@@ -1,0 +1,172 @@
+.footer
+  background: #444444
+.footer-wrapper 
+  padding: 62px 0
+  display: grid
+  grid-template-columns: 239px 112px 455px 180px 1fr
+  row-gap: 35px
+
+.footer-logo
+  display: block
+  grid-area: 1 / 1 
+  width: 144px
+  height: 36px
+  
+.footer-logo-image
+  width: 100%
+  object-fit: cover  
+.footer-logo:hover
+  opacity: 0.6
+.footer-logo:active
+  opacity: 0.3
+.footer-logo:focus
+  outline: 2px solid #af4fff  
+.footer-address  
+  grid-area: 2 / 1 
+.footer-address-text
+  position: relative
+  margin: 0
+  padding: 0   
+  font-family: "Rubik", sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 20px 
+  font-style: normal
+  color: #fff 
+.footer-address-text::after
+  content: ""
+  position: absolute 
+  left: 0
+  top: 104px
+  width: 80px
+  background: #ffc700
+  width: 80px
+  height: 7px 
+.footer-navigation-list  
+  grid-area: 2 / 3 / 2 / 4 
+  justify-self: center
+  margin: 0
+  padding: 0   
+  display: flex
+  flex-wrap: wrap 
+  gap: 35px
+  margin-bottom: 30px
+.footer-navigation-item  
+  list-style: none
+
+.footer-navigation-link
+  position: relative
+  display: block
+  font-family: "Raleway",sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.6px
+  text-transform: uppercase
+  color: #fff
+  text-decoration: none  
+  transition: color .5s ease-in-out 
+  border-bottom: 2px solid transparent 
+.footer-navigation-link:hover 
+  color: #ffc700 
+  border-bottom: 2px solid #ffc700    
+.footer-navigation-link:focus
+  color: #fff
+  outline: 2px solid #af4fff    
+.footer-navigation-link:active
+  color: #ffc700
+  opacity: 0.3 
+  
+
+.footer-contacts-phone
+  grid-area: 2 / 5 / 2 / 6
+  justify-self: end
+  display: inline-block
+  font-family: "Rubik", sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: 20px 
+  text-decoration-line: underline
+  color: #FFF
+.footer-contacts-phone:hover
+  color: #ffc700 
+.footer-contacts-phone:focus
+  color: #fff
+  outline-offset: 2px
+  outline: 2px solid #af4fff   
+.footer-contacts-phone:active
+  color: #ffc700 
+  opacity: 0.3
+.footer-contacts-image
+  grid-area: 3 / 5 / 3 / 6
+  justify-self: end
+  width: 115px
+  height: 33px
+  background-color: #444444
+  background-size: 115px
+  background-repeat: no-repeat
+.footer-contacts-image:focus
+  outline: 2px solid #af4fff 
+  outline-offset: 2px
+.footer-contacts-image
+  display: block
+  width: 115px
+  height: 33px  
+.footer-contacts-image-academy:hover path
+  fill: #FFF  
+.footer-contacts-image-academy:active path 
+  fill: #FFF 
+  opacity: 0.3 
+.social-list
+  grid-area: 3 / 3 / 3 / 4
+  justify-self: center
+  width: 150px 
+  margin: 0
+  padding: 0
+  display: grid
+  grid-template-columns: repeat(3, 40px)
+  gap: 15px
+.social-item 
+  position: relative 
+  list-style-type: none     
+.social-link 
+  display: block
+  width: 40px
+  height: 40px
+  background: #444444
+  border-radius: 50%
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  transition: background-color .5s ease-in-out 
+  outline: none
+.social-link:before
+  content: ""
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 0
+  height: 0  
+.social-link:hover
+  background-color: #ffc700 
+.social-link:focus:before 
+  width: 40px
+  height: 40px 
+  outline: 2px solid #af4fff
+  outline-offset: 2px   
+.social-link:active
+  opacity: 0.3
+  background-color: #ffc700  
+.social-link-fb
+  background-image: url("../images/svg/fb.svg")   
+.social-link-inst
+  background-image: url("../images/svg/insta.svg") 
+.social-link-tw
+  background-image: url("../images/svg/twitter.svg") 
+ 
+
+  

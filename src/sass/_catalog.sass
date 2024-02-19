@@ -1,0 +1,355 @@
+.catalog-products
+  display: flex  
+.catalog-products-left
+  padding: 0 60px  
+.catalog-filter
+  width: 200px 
+.catalog-filter-title
+  margin: 0
+  padding: 0
+  margin-top: 25px
+  margin-bottom: 25px  
+  font-family: "Raleway", sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.2px
+  text-transform: uppercase
+.catalog-filter-subtitle
+  margin-bottom: 20px
+  font-family: "Rubik", sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 700
+  line-height: 20px 
+  letter-spacing: -0.36px  
+  color: #000
+.catalog-filter-hr
+  display: inline-block
+  margin-top: 35px
+  margin-bottom: 12px
+  width: 200px
+  height: 2px
+  background-color: #000
+  border: none
+  margin-left: 0   
+.range-scale
+  position: relative
+  background-color: #dcdcdc
+  height: 2px
+  width: 200px
+  margin-bottom: 10px
+.range-bar
+  position: absolute
+  background-color: #000000
+  height: 2px  
+  width: 110px
+  left: 5px
+.range-toggle
+  position: absolute
+  width: 15px
+  height: 15px  
+  background-color: #ebebeb  
+  border: none
+  cursor: pointer    
+.range-toggle::before
+  content: ""
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 13px
+  height: 13px
+  border-radius: 50%
+  background-color: #ebebeb
+  border: 2px solid #000
+.range-toggle:hover
+  opacity: .5  
+.range-toggle:focus
+  outline: 2px solid #af4fff
+  outline-offset: 2px
+  opacity: 1
+.range-toggle:active::after
+  content: ""
+  position: absolute 
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 13px
+  height: 13px
+  border-radius: 50%
+  background-color: #000 
+  opacity: 1
+.toggle-min
+  top: -8px 
+  left: -15px
+.toggle-max
+  top: -8px
+  right: -15px  
+.range-wrapper-inputs
+  display: grid
+  grid-template-columns: 90px 1fr
+  
+.catalog-filter-label
+  display: flex   
+.catalog-filter-label:not(:last-child)  
+  margin-right: 67px 
+.range-input
+  width: 47px
+  border: none 
+  background-color: transparent
+  padding: 0 2px
+  font: inherit
+  appearance: textfield
+  text-align: center
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+.range-input:focus
+  outline: 2px solid #af4fff
+  
+.catalog-filter-group
+  margin: 0
+  padding: 0
+  border: none
+.catalog-filter-list
+  margin: 0
+  padding: 0
+  list-style-type: none  
+.catalog-filter-item:not(:last-child)
+  margin-bottom: 17px  
+.control
+  position: relative
+  padding-left: 36px  
+  display: block     
+.control-mark
+  display: inline-block
+  position: absolute
+  top: -2px
+  left: 0
+  width: 20px
+  height: 20px
+  border: 2px solid #000
+.control-label
+  font-weight: 400
+  font-family: inherit
+  line-height: normal 
+.control:hover .control-mark
+  opacity: .6  
+.control:active .control-mark
+  opacity: .3
+.control-input:disabled + .control-mark
+  opacity: .1      
+input[type="checkbox"] + .control-mark
+  border: 2px solid #cccccc
+.control-mark::before
+  content: ""
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 18px
+  height: 18px  
+  transform: translate(-50% ,-50%)
+  background-image: url("../images/svg/tick.svg") 
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 10px auto
+  opacity: 0  
+input[type="checkbox"]:checked + .control-mark::before
+  opacity: 1   
+input[type="checkbox"]:checked + .control-mark
+  border: 2px solid #000
+input[type="checkbox"]:focus + .control-mark  
+  outline: 2px solid #af4fff
+  outline-offset: 2px
+input[type="radio"] + .control-mark
+  border: none
+input[type="radio"] + .control-mark::after
+  content: ""
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 18px 
+  height: 18px  
+  border-radius: 50%
+  border: 2px solid #000 
+  opacity: .6
+input[type="radio"]:checked + .control-mark::before
+  content: ""
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%) 
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: #000
+  opacity: 1
+input[type="radio"]:focus + .control-mark
+  outline: 2px solid #af4fff
+  outline-offset: 2px    
+.catalog-products-right  
+  width: 870px  
+.filter-button
+  width: 200px
+  text-align: center
+  margin-top: 35px    
+
+/*Сортировка*/  
+.sorting-container
+  padding: 16px 40px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+.product-cards-title
+  margin: 0
+  padding: 0
+  width: 147px
+  color: #000
+  font-family: "Raleway", sans-serif
+  font-size: 16px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.2px
+  text-transform: uppercase 
+.select  
+  width: 200px
+.select-control  
+  min-width: 159px
+  padding: 8px 0
+  padding-right: 30px
+  font-size: 18px
+  font-family: inherit
+  font-weight: 400
+  background-color: transparent
+  border: none
+  appearance: none
+  background-image: url("../images/svg/select-arrow.svg")
+  background-repeat: no-repeat
+  background-position: right 0 center
+  background-size: contain
+.select-control:hover
+  opacity: .6
+.select-control:focus
+  outline: 2px solid #af4fff 
+.select-control:active
+  opacity: .3  
+.sort-item
+  display: flex  
+.card-grid-toggle
+  align-items: center  
+  display: block
+  padding: 0 3px
+  width: 20px
+  height: 20px 
+  color: #000
+  opacity: .2 
+.card-grid-toggle:hover 
+  color: #000
+  opacity: .6
+.card-grid-toggle:focus 
+  outline: 2px solid #af4fff   
+.card-grid-toggle:active
+  color: #000
+  opacity: 1
+.product-cards
+  background-color: #fff
+  padding: 70px 40px 0
+  display: grid
+  grid-template-columns: repeat(2, 360px) 
+  gap: 44px  
+.product-cards-show-more-button 
+  display: block 
+  grid-column: 1 / -1
+  padding: 15px 10px
+  background-color: #fff
+  border: 2px solid #dcdcdc
+  text-decoration: none
+.product-card
+  display: grid
+  grid-template-columns: 360px
+  grid-template-rows: auto auto
+  transition: opacity .5s ease-in-out
+.product-card:hover
+  opacity: .8
+.product-card:focus-within
+  outline: 2px solid #af4fff  
+.product-card:active
+  opacity: .8 
+
+.product-card-info
+  margin-bottom: 30px
+  position: relative
+.product-card-image  
+  width: 100%
+  object-fit: contain
+.product-card-info-new-item::before
+  content: ""
+  position: absolute
+  top: 46px
+  right: 36px
+  width: 60px
+  height: 60px
+  border:  2px solid rgba(0, 0, 0, 0.60)
+  border-radius: 50%
+  text-align: center 
+.product-card-info-new-item::after   
+  content: "New"
+  position: absolute
+  top: 70px
+  right: 46px
+  font-family: "Raleway", sans-serif
+  font-size: 14px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 2.8px
+  text-transform: uppercase   
+.product-card-button
+  position: absolute
+  top: 50%
+  left: 50%
+  z-index: 3  
+  transform: translate(-50%,-50%)  
+  display: none
+  background: linear-gradient(rgba(0,0,0,0 ) 40%, #ffe17f 40% 60%, rgba(0,0,0,0 )60% 100%)
+  padding: 10px 20px
+  font-family: "Raleway", sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 3.8px
+  text-transform: uppercase 
+  border: none
+  outline: none
+.product-card:hover .product-card-button
+  display: block
+  background: linear-gradient(rgba(0,0,0,0 ) 40%, #ffe17f 40% 60%, rgba(0,0,0,0 )60% 100%) 
+.product-card:active .product-card-button
+  display: block  
+  background: linear-gradient(rgba(0,0,0,0 ) 40%, #ffc700 40% 60%, rgba(0,0,0,0 )60% 100%) 
+.product-card-content
+ grid-row: 2 / 3
+ display: grid
+ grid-template-columns: minmax(min-content, 226px) auto
+ font-family: "Rubik", sans-serif
+ font-size: 18px
+ font-style: normal
+.product-card-title
+  color: #000
+  font-weight: 700
+  line-height: 20px
+.product-card-price
+  justify-self: end 
+  color:  #444  
+  font-weight: 400
+  line-height: normal
+
+
+ 

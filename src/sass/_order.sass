@@ -1,0 +1,54 @@
+/*order*/
+
+.order  
+  background-color: #fff
+  padding: 70px 0
+.order-button
+  position: relative
+  margin: 0 auto
+  border: 2px dashed #dcdcdc
+  padding: 35px 125px
+  width: 1160px
+  text-align: center
+  font-family: "Raleway", sans-serif
+  font-size: 20px
+  font-style: normal
+  font-weight: 800
+  line-height: normal
+  letter-spacing: 4px
+  text-transform: uppercase
+.order-button::before 
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 125px
+  height: 100%
+  background: url("../images/svg/order.svg") no-repeat center
+  background-color: #ffe17f
+  // background-size: contain
+.order-button:hover::before
+  background-color: #ffc700 
+.order-button::after 
+  content: ""
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  right: 42px
+  width: 50px
+  height: 50px
+  background: url(../images/svg/order-ellipse.svg) no-repeat center 
+  // background-size: contain
+  background-color: rgba(220, 220, 220, 0.50)
+  border-radius: 50%
+  opacity: 0.6
+.order-button:hover::after
+  opacity: 1
+.order-button:focus
+  outline: 2px solid #af4fff
+.order-button:active
+  opacity: 0.3  
+.order-image
+  margin: auto
+  fill: #ffe17f 
+

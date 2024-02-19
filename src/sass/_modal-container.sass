@@ -1,0 +1,233 @@
+/*modal-container*/
+.modal-container
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  background-color: rgba(255, 255, 255, .60)
+  flex-direction: column
+  z-index: 5
+.modal
+  position: relative
+  width: 920px
+  margin: auto
+  display: grid
+  grid-template-columns: repeat(4, 190px)  
+  align-items: center
+  padding: 72px 80px
+  background-color: #fff
+.modal-title
+  grid-column: 1 / 4 
+  font-family: "Raleway", sans-serif
+  font-size: 50px
+  font-style: normal
+  font-weight: 800
+  line-height: 50px 
+  color: #000
+  padding: 0
+  margin: 0
+  margin-bottom: 42px
+.modal-close-button
+  grid-column: 4 / 5
+  justify-self: end 
+  align-self: start
+  margin-top: 10px
+  width: 26px
+  height: 26px  
+  background-image: url("../images/svg/cross2.svg")
+  background-repeat: no-repeat
+  background-color: transparent
+  background-size: contain
+  border: none  
+  cursor: pointer
+.modal-close-button:hover
+  opacity: .6 
+.modal-close-button:focus
+  outline: 2px solid #af4fff 
+.modal-close-button:active
+  opacity: .3  
+.modal-list
+  grid-column: 1 / 5
+  margin: 0
+  padding: 0
+  display: grid
+  grid-template-columns: repeat(4, 190px) 
+.modal-item
+  box-sizing: border-box 
+  position: relative
+  list-style-type: none  
+  margin-bottom: 42px
+.modal-item:nth-child(odd)
+  grid-column: 1 / 2  
+.modal-item:nth-child(even)
+  grid-column: 3 / 5
+  justify-self: end
+.modal-text
+  margin: 0
+  padding: 0  
+.input-modal
+  width: 360px   
+  border-bottom: 3px solid #c4c4c4
+  outline: none
+  background-position: right 22px center
+  background-repeat: no-repeat
+  background-size: 15px 12px
+.name-modal 
+  background-image: url("../images/svg/name-modal.svg") 
+.mail-modal
+  background-image: url("../images/svg/mail-modal.svg")  
+.input-modal-order
+  width: 540px 
+.field
+  padding: 20px 20px
+  font: inherit
+  border: none
+  background-color: #F0F0F0 
+  color: #000
+.field::-webkit-input-placeholder,
+.field::-moz-placeholder
+  color: #000
+  opacity: .3       
+.field:hover
+  background-color: #dcdcdc
+  border-bottom: none
+.field:active
+  color: #000
+  opacity: 1  
+.field:focus 
+  outline: 2px solid #af4fff 
+  outline-offset: 2px
+  background-color: #f0f0f0
+  border-bottom: none
+.field:disabled,
+.field:disabled:hover
+  pointer-events: none
+  opacity: .3  
+.field:invalid
+  outline: none
+  border-bottom: none
+  border: 2px solid #ff3d3d  
+.modal-subtext  
+  margin: 0
+  padding: 0 
+  color: #000
+  font-family: "Rubik", sans-serif
+  font-size: 14px
+  font-style: normal
+  font-weight: 400
+  line-height: 20px
+.field:invalid + .modal-subtext 
+  color: #f90505    
+.modal-amount-title
+  display: inline-block
+  font-family: inherit
+  font-size: 18px
+  font-style: normal
+  font-weight: 700
+  line-height: 20px 
+  letter-spacing: -0.36px 
+  padding-right: 19px
+  margin-bottom: 14px
+.tooltip  
+  display: inline-block
+  position: absolute
+  width: 30px
+  height: 30px
+  top: -5px
+  border: none
+  border-radius: 50%
+  background-color: #ffe17f 
+  background-image: url("../images/svg/info.svg") 
+  background-repeat: no-repeat
+  background-position: 50% 50%  
+  background-size: contain
+  transition: background-color .3s ease-in-out .1s
+.tooltip:hover 
+  background-color: #ffc700  
+.tooltip-text
+  position: absolute
+  top: 35px
+  left: -150px
+  z-index: 1
+  display: none
+  font: inherit
+  line-height: 20px
+  background-color: #000
+  color: #fff
+  padding: 20px 20px 10px
+  width: 200px
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text
+  display: block  
+    
+.item-counter
+  display: flex
+.modal-range
+  width: 60px
+  height: 60px
+  padding: 20px
+  background-color: #f0f0f0
+  border: none
+  position: relative
+.modal-range:focus
+  outline: none  
+.modal-min::after
+  content: ""
+  position: absolute
+  width: 16px
+  height: 2px
+  background-color: #000
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+.modal-max::before,
+.modal-max::after
+  content: ""
+  position: absolute
+  width: 16px
+  height: 2px
+  background-color: #000
+.modal-max::before
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%) rotate(180deg) 
+.modal-max::after
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%) rotate(90deg)
+.input-number
+  width: 60px 
+  border: none
+  background-color: #f0f0f0
+  padding: 20px
+  font: inherit
+  appearance: textfield
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+.input-number:focus
+  outline: none 
+/*класс error- для состояние ошибки input-number*/  
+.error
+  border: 2px solid #ff3d3d  
+.modal-label
+  display: block
+  font-family: "Rubik", sans-serif
+  font-size: 18px
+  font-style: normal
+  font-weight: 700
+  line-height: 20px 
+  letter-spacing: -0.36px
+  padding-bottom: 14px  
+.modal-amount  
+  width: 60px
+  height: 60px
+  border: none
+  margin: auto
+  background-color: #f0f0f0
+  padding: 20px 
+.modal-container-close
+  display: none  
